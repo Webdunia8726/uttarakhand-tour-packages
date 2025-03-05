@@ -1,0 +1,595 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.navbar {
+    background: linear-gradient(45deg, #2E8B57, #1E4D2B);
+}
+.navbar-brand {
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+}
+.navbar-brand:hover {
+    color: #FFD700;
+}
+.nav-item a {
+    color: white !important;
+    font-weight: 500;
+}
+.nav-item a:hover {
+    color: #FFD700 !important;
+}
+.call-icon {
+    background: white;
+    color: #2E8B57;
+    font-size: 22px;
+    padding: 8px 12px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    transition: 0.3s;
+}
+.call-icon:hover {
+    background: #FFD700;
+    color: black;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.7);
+}
+.contact-btn {
+    background: white;
+    color: #2E8B57;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(243, 242, 236, 0.7);
+
+}
+.contact-btn:hover {
+    background: white;
+    color: #2E8B57;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+}
+.hero {
+    background: url('/img/hero.jpg') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    position: relative;
+}
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+}
+.hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.hero-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.hero-btn {
+    background: white;
+    color: #2E8B57;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+
+}
+.hero-btn:hover {
+    background: white;
+    color: #2E8B57;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+}
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    .hero{
+        height: 60vh;
+    }
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+}
+.why-choose-us {
+    background: linear-gradient(45deg, #1E4D2B, #2E8B57);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.why-choose-us h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.icon-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+    text-align: center;
+    border: 2px solid white;
+    box-shadow: 0 0 10px rgba(247, 245, 235, 0.7);
+
+}
+
+.icon-box:hover {
+    background: #FFD700;
+    color: #1E4D2B;
+    transform: translateY(-5px);
+}
+
+.icon-box i {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.icon-box h5 {
+    font-size: 20px;
+}
+
+/* 📱 Mobile Responsive Design */
+@media (max-width: 768px) {
+    .icon-box {
+        padding: 15px;
+    }
+    .icon-box i {
+        font-size: 40px;
+    }
+    .icon-box h5 {
+        font-size: 18px;
+    }
+    .icon-box p {
+        display: none; /* 🛑 Mobile से Paragraph हटाया */
+    }
+}
+
+
+/* tour packages */
+.tour-card {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    color: white;
+    height: 500px;
+    
+}
+
+.tour-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tour-card .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.2));
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.tour-card .details h4 {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.tour-card .details p {
+    font-size: 13px;
+    margin: 5px 0;
+}
+
+.tour-card .includes {
+    font-size: 14px;
+    border-bottom: 2px solid #ff9800;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.tour-card .includes a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.tour-card .includes a:hover {
+    text-decoration: underline;
+    color: #ffeb3b;
+}
+
+.tour-card .price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+.tour-card .old-price {
+    text-decoration: line-through;
+    opacity: 0.7;
+    font-size: 15px;
+    color: #f0f0f0;
+}
+
+.tour-card .buttons {
+    display: flex;
+    gap: 10px;
+    
+}
+
+.tour-card .buttons a {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px !important; 
+}
+
+.tour-card .callback {
+    background: #ff9800;
+}
+
+.tour-card .itinerary {
+    background: #4caf50;
+}
+
+.tour-card .callback:hover {
+    background: #e68900;
+}
+
+.tour-card .itinerary:hover {
+    background: #388e3c;
+}
+   /* Mobile View ke liye Button Size Chhota */
+@media (max-width: 768px) {
+.tour-card .buttons a {
+    font-size: 12px;
+    padding: 8px;
+}
+}
+
+/* cta */
+.cta-section {
+    background: linear-gradient(to right, #2c3e50, #27ae60);
+    color: white;
+    padding: 60px 20px;
+  }
+  .cta-heading {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .cta-subheading {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  .cta-buttons .cta-btn1 {
+    margin: 10px;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    background-color: white;
+    color: #27ae60;
+    border: 2px solid rgb(235, 227, 227);
+  }
+  @media (max-width: 768px) {
+    .cta-heading { font-size: 1.8rem; }
+    .cta-subheading { font-size: 1rem; }
+    .cta-buttons { display: flex; flex-direction: column; gap: 10px; }
+  }
+  .cta-btn2{
+    margin: 10px;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    background-color: #ff9800;
+    color: white;
+  }
+  .cta-btn2:hover{
+    color: white;
+    background-color: #ff9800;
+  }
+
+
+  /* contact form section */
+  .contact-section {
+    background: #f5f5f5;
+    padding: 60px 0;
+  }
+  .contact-details {
+    padding: 30px;
+    border-radius: 10px;
+  }
+  .contact-details h2 {
+    color: #ff9800;
+    margin-bottom: 20px;
+  }
+  .contact-details ul {
+    list-style: none;
+    padding: 0;
+  }
+  .contact-details ul li {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+  .contact-details ul li i {
+    margin-right: 10px;
+    color: #ff9800 !important;
+  }
+  .social-icons a {
+    font-size: 24px;
+    margin-right: 15px;
+    transition: 0.3s;
+    color: #ff9800;
+
+  }
+ 
+  .contact-form {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .contact-form .form-group label {
+    font-weight: bold;
+    color: #1b5e20;
+  }
+  .contact-form .form-control {
+    border: 2px solid #1b5e20;
+    border-radius: 5px;
+  }
+  .contact-form .btn-primary {
+    background: #ff9800;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  .contact-form .btn-primary:hover {
+    background: #e68900;
+  }
+  .footer {
+    background: linear-gradient(to right, #1b5e20, #3b3b3a);
+    color: white;
+}
+.footer h5 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.footer a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+.social-icons a {
+    font-size: 20px;
+    transition: 0.3s;
+}
+.social-icons a:hover {
+    opacity: 0.7;
+}
+
+
+
+/* whtsapp button icon */
+ /* Common Button Styles */
+ .sticky-btn {
+    position: fixed;
+    bottom: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.sticky-btn:hover {
+    transform: scale(1.1);
+}
+
+/* WhatsApp Button (Left Side) */
+.whatsapp-btn {
+    left: 20px;
+}
+
+/* Call Button (Right Side) */
+.call-btn {
+    right: 20px;
+    background-color: #007bff;
+}
+
+
+
+
+
+.my-custom-carousel .my-carousel-item {
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 5px;
+    background-color: #f8f8f8;
+  }
+  .my-review-card img.my-review-img {
+    width: 70px !important;
+    height: 70px !important;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  
+  .my-review-card img.my-review-img2 {
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    margin-top: 50px;
+  margin-left: -25px;
+  }
+  
+  .my-review-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  .my-review-name {
+    font-weight: bold;
+    margin-left: 12px;
+  }
+  .my-review-verified {
+    color: #3498db;
+    margin-left: 6px;
+  }
+  .my-review-date {
+    font-size: 13px;
+    color: #7f8c8d;
+    margin-left: 10px;
+  }
+  .my-review-rating {
+    color: #fcbf02;
+    margin: 12px 0;
+  }
+  .my-review-text {
+    font-size: 16px;
+  }
+  .owl-nav button.owl-prev,
+  .owl-nav button.owl-next {
+    background: #3498db;
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 22px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .owl-nav button.owl-prev {
+    left: -55px;
+  }
+  .owl-nav button.owl-next {
+    right: -55px;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .my-custom-carousel .my-carousel-item {
+      padding: 15px;
+    }
+    .my-review-card img.my-review-img {
+      width: 60px;
+      height: 60px;
+    }
+    .my-review-text {
+      font-size: 14px;
+    }
+  }
+  @media (max-width: 576px) {
+    .my-custom-carousel .my-carousel-item {
+      padding: 10px;
+    }
+    .my-review-card img.my-review-img {
+      width: 50px;
+      height: 50px;
+    }
+    .my-review-text {
+      font-size: 13px;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+    /* Media query for mobile devices */
+    @media (max-width: 768px) {
+      .googlereview {
+          text-align: center;
+      }
+      .star-rating {
+  font-size: 15px;
+      }
+  }
+  
+  .googlelogofull {
+      width: 100px;
+      height: 40px;
+      margin-right: 10px;
+  }
+  
+  .googlereview {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .star-rating {
+      margin-left: 10px;
+  }
+  
+  .btn-center {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+  }
+  
+  
+  .bgreviews{
+    background-color:#f8f8f8 ;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 20px;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Horizontal scroll hatega */
+    scroll-behavior: smooth; /* Smooth scrolling */
+}

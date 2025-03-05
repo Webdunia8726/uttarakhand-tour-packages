@@ -1,0 +1,305 @@
+.itineraryhero h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.itineraryhero p {
+    font-size: 18px;
+    max-width: 700px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.hero-buttons .explore-btn,
+.hero-buttons .book-btn {
+    padding: 12px 24px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.hero-buttons .explore-btn {
+    background: #FFD700; /* Golden */
+    color: #000;
+}
+
+.hero-buttons .explore-btn:hover {
+    background: #FFC107;
+}
+
+.hero-buttons .book-btn {
+    background: #ff4500; /* Orange-Red */
+    color: white;
+}
+
+.hero-buttons .book-btn:hover {
+    background: #e63900;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .itineraryhero {
+        height: 350px;
+        padding: 15px;
+    }
+
+    .itineraryhero h1 {
+        font-size: 28px;
+    }
+
+    .itineraryhero p {
+        font-size: 16px;
+        max-width: 90%;
+    }
+
+    .hero-buttons .explore-btn,
+    .hero-buttons .book-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+
+ /* Itinerary Section */
+ .itinerary {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.section-title {
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+    color: #ff6f00;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.day {
+    border-left: 5px solid #ff6f00;
+    padding: 20px;
+    margin-bottom: 20px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.day h3 {
+    font-size: 22px;
+    color: #388e3c;
+    font-weight: bold;
+}
+
+.day p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.day ul {
+    list-style: none;
+    padding: 0;
+}
+
+.day ul li {
+    font-size: 16px;
+    padding: 8px 0;
+    color: #444;
+}
+
+.day ul li strong {
+    color: #ff6f00;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+/* .call-btn,
+.whatsapp-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+} */
+
+.call-btn {
+    background: #388e3c;
+    color: white;
+}
+
+.call-btn:hover {
+    background: #2c6e2f;
+}
+
+.whatsapp-btn {
+    background: #ff6f00;
+    color: white;
+}
+
+.whatsapp-btn:hover {
+    background: #e65c00;
+}
+
+/* Hover effect */
+.day:hover {
+    background: #fff4e6;
+    transform: scale(1.02);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .itinerary {
+        max-width: 90%;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .day h3 {
+        font-size: 20px;
+    }
+
+    .day p,
+    .day ul li {
+        font-size: 14px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+.tour-inclusions {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    border-top: 5px solid #FF6F00;
+}
+
+.tour-inclusions h2 {
+    font-size: 28px;
+    color: #2E7D32;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.tour-item {
+    display: flex;
+    align-items: center;
+    background: #F7F6F3;
+    border-left: 5px solid #2E7D32;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.tour-item:hover {
+    transform: scale(1.03);
+}
+
+.tour-item i {
+    font-size: 26px;
+    color: #FF6F00;
+    margin-right: 15px;
+}
+
+.tour-item p {
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+}
+
+.contact-buttons {
+    margin-top: 20px;
+}
+
+.call-uttarakhand {
+    background-color: #2E7D32;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+}
+
+.whatsapp-uttarakhand {
+    background-color: #FF6F00;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+}
+
+.call-uttarakhand:hover, .whatsapp-uttarakhand:hover {
+    opacity: 0.8;
+}
+
+.tour-highlight {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #2E7D32, #1B5E20); /* Uttarakhand Green Theme */
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.highlight-icon {
+    font-size: 40px;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.highlight-content h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.highlight-content p {
+    font-size: 16px;
+    line-height: 1.5;
+}
